@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>アイネットデイサービス今川 | 地域密着型 半日デイサービス</title>
+    <title>アイネットデイサービスセンター | 地域密着型 半日デイサービス</title>
     <meta name="description" content="地域密着型、半日（3時間）のリハビリ型デイサービス。送迎・入浴・運動・提携美容院サービスを提供しています。">
     
     <!-- Tailwind CSS -->
@@ -49,9 +49,6 @@
 
     <style>
         body { font-family: 'Noto Sans JP', sans-serif; -webkit-font-smoothing: antialiased; }
-        /* Mobile menu transition */
-        #mobile-menu { transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; max-height: 0; opacity: 0; overflow: hidden; }
-        #mobile-menu.open { max-height: 400px; opacity: 1; }
     </style>
 </head>
 <body class="bg-white text-text flex flex-col min-h-screen">
@@ -61,11 +58,7 @@
         <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2 group">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-clover-primary group-hover:scale-110 transition-transform"><path d="M16.5 3C14.76 3 13.09 3.81 12 5.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5C2 11.58 4.42 14 7.5 14C8.63 14 9.68 13.62 10.53 12.97L11 18L10 21H14L13 18L13.47 12.97C14.32 13.62 15.37 14 16.5 14C19.58 14 22 11.58 22 8.5C22 5.42 19.58 3 16.5 3ZM7.5 12C5.57 12 4 10.43 4 8.5C4 6.57 5.57 5 7.5 5C8.69 5 9.74 5.59 10.41 6.5C10.15 7.12 10 7.79 10 8.5C10 9.21 10.15 9.88 10.41 10.5C9.74 11.41 8.69 12 7.5 12ZM16.5 12C15.31 12 14.26 11.41 13.59 10.5C13.85 9.88 14 9.21 14 8.5C14 7.79 13.85 7.12 13.59 6.5C14.26 5.59 15.31 5 16.5 5C18.43 5 20 6.57 20 8.5C20 10.43 18.43 12 16.5 12Z" /></svg>
-                <div class="flex flex-col">
-                    <span class="text-lg md:text-xl font-bold text-clover-dark tracking-tight leading-none">アイネットデイサービスセンター</span>
-                    <span class="text-xs text-subtext font-medium leading-none">地域密着型通所介護</span>
-                </div>
+                <img src="assets/logo.png" alt="アイネットデイサービスセンター" class="h-10 md:h-12 w-auto object-contain">
             </a>
 
             <!-- Desktop Nav -->
@@ -96,7 +89,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden bg-white border-b border-border shadow-lg">
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg">
             <nav class="flex flex-col p-4 gap-2">
                 <a href="index.html" class="p-4 rounded-xl text-base font-bold flex items-center justify-between bg-clover-light text-clover-dark">ホーム <span class="text-clover-primary">→</span></a>
                 <a href="guide.html" class="p-4 rounded-xl text-base font-bold flex items-center justify-between text-text hover:bg-muted">ご利用案内 <span class="text-clover-primary">→</span></a>
@@ -132,41 +125,41 @@
         <!-- Key Points -->
         <section class="py-12 bg-clover-light/30 border-y border-clover-primary/10">
             <div class="max-w-6xl mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6">
                     <!-- Point 1 -->
-                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex md:flex-col items-center gap-4 text-left md:text-center hover:-translate-y-1 transition-transform">
+                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex flex-col items-center gap-3 text-center hover:-translate-y-1 transition-transform">
                         <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-clover-light flex items-center justify-center text-clover-primary flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         </div>
-                        <div><h3 class="font-bold text-gray-900 text-base">半日（3時間）</h3><p class="text-sm text-subtext leading-tight md:mt-1">負担の少ない短時間</p></div>
+                        <div><h3 class="font-bold text-gray-900 text-sm md:text-base">半日（3時間）</h3><p class="text-xs md:text-sm text-subtext leading-tight mt-1">負担の少ない短時間</p></div>
                     </div>
                     <!-- Point 2 -->
-                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex md:flex-col items-center gap-4 text-left md:text-center hover:-translate-y-1 transition-transform">
+                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex flex-col items-center gap-3 text-center hover:-translate-y-1 transition-transform">
                         <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-clover-light flex items-center justify-center text-clover-primary flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
                         </div>
-                        <div><h3 class="font-bold text-gray-900 text-base">送迎あり</h3><p class="text-sm text-subtext leading-tight md:mt-1">ご自宅まで送り迎え</p></div>
+                        <div><h3 class="font-bold text-gray-900 text-sm md:text-base">送迎あり</h3><p class="text-xs md:text-sm text-subtext leading-tight mt-1">ご自宅まで送り迎え</p></div>
                     </div>
                     <!-- Point 3 -->
-                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex md:flex-col items-center gap-4 text-left md:text-center hover:-translate-y-1 transition-transform">
+                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex flex-col items-center gap-3 text-center hover:-translate-y-1 transition-transform">
                         <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-clover-light flex items-center justify-center text-clover-primary flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5"/><path d="M3 7h18"/><path d="M7 19v-9a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2.5"/><path d="M22 13v-3a2 2 0 0 0-2-2h-3.5"/><path d="M7 16h13.5a2.5 2.5 0 0 1 0 5h-11a2.5 2.5 0 0 1-2.5-2.5V16Z"/></svg>
                         </div>
-                        <div><h3 class="font-bold text-gray-900 text-base">入浴対応</h3><p class="text-sm text-subtext leading-tight md:mt-1">銭湯方式・要支援も対応</p></div>
+                        <div><h3 class="font-bold text-gray-900 text-sm md:text-base">入浴対応</h3><p class="text-xs md:text-sm text-subtext leading-tight mt-1">銭湯方式・要支援も対応</p></div>
                     </div>
                     <!-- Point 4 -->
-                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex md:flex-col items-center gap-4 text-left md:text-center hover:-translate-y-1 transition-transform">
+                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex flex-col items-center gap-3 text-center hover:-translate-y-1 transition-transform">
                         <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-clover-light flex items-center justify-center text-clover-primary flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
                         </div>
-                        <div><h3 class="font-bold text-gray-900 text-base">無理のない運動</h3><p class="text-sm text-subtext leading-tight md:mt-1">器具を用いた機能訓練</p></div>
+                        <div><h3 class="font-bold text-gray-900 text-sm md:text-base">無理のない運動</h3><p class="text-xs md:text-sm text-subtext leading-tight mt-1">器具を用いた機能訓練</p></div>
                     </div>
                     <!-- Point 5 -->
-                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex md:flex-col items-center gap-4 text-left md:text-center hover:-translate-y-1 transition-transform">
+                    <div class="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-border flex flex-col items-center gap-3 text-center hover:-translate-y-1 transition-transform col-span-2 md:col-span-1 w-full md:w-auto mx-auto md:mx-0 max-w-[50%] md:max-w-none">
                         <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-clover-light flex items-center justify-center text-clover-primary flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" x2="8.12" y1="4" y2="15.88"/><line x1="14.47" x2="20" y1="14.48" y2="20"/><line x1="8.12" x2="12" y1="8.12" y2="12"/></svg>
                         </div>
-                        <div><h3 class="font-bold text-gray-900 text-base">提携美容院</h3><p class="text-sm text-subtext leading-tight md:mt-1">施設内でヘアカット</p></div>
+                        <div><h3 class="font-bold text-gray-900 text-sm md:text-base">提携美容院</h3><p class="text-xs md:text-sm text-subtext leading-tight mt-1">施設内でヘアカット</p></div>
                     </div>
                 </div>
             </div>
@@ -306,56 +299,56 @@
 
                     <!-- Step 1 -->
                     <div class="flex flex-row items-center w-full relative group">
-                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-300 ease-out group-hover:scale-125 group-hover:shadow-2xl group-hover:z-20 group-hover:border-clover-light">
+                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-500 ease-in-out md:group-hover:w-80 md:group-hover:h-80 md:group-hover:ml-8 md:group-hover:shadow-2xl md:group-hover:z-30 group-hover:border-clover-primary">
                             <img src="assets/pickup.webp" alt="お迎え" class="w-full h-full object-cover">
                         </div>
                         <div class="w-full md:w-1/2 pl-20 md:pr-20 md:pl-0 md:text-right">
                             <div class="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                                 <div class="inline-block bg-clover-primary text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-sm">8:30</div>
                                 <h3 class="font-bold text-xl text-gray-900 mb-2">お迎え</h3>
-                                <p class="text-base text-subtext leading-relaxed">ご自宅までお迎え</p>
+                                <p class="text-base text-subtext leading-relaxed">専用車でご自宅の玄関先までお迎えにあがります。車椅子の方も安心してご乗車いただけるようサポートいたします。</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Step 2 -->
                     <div class="flex flex-row items-center w-full relative group">
-                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-300 ease-out group-hover:scale-125 group-hover:shadow-2xl group-hover:z-20 group-hover:border-clover-light">
+                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-500 ease-in-out md:group-hover:w-80 md:group-hover:h-80 md:group-hover:-ml-[22rem] md:group-hover:shadow-2xl md:group-hover:z-30 group-hover:border-clover-primary">
                             <img src="assets/arrival.webp" alt="到着・健康チェック" class="w-full h-full object-cover">
                         </div>
                         <div class="w-full md:w-1/2 pl-20 md:pl-20 md:ml-auto">
                             <div class="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                                 <div class="inline-block bg-clover-primary text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-sm">9:00</div>
-                                <h3 class="font-bold text-xl text-gray-900 mb-2">到着・健康チェック</h3>
-                                <p class="text-base text-subtext leading-relaxed">バイタル測定・体調確認</p>
+                                <h3 class="font-bold text-xl text-gray-900 mb-2">到着・<br class="md:hidden">健康チェック</h3>
+                                <p class="text-base text-subtext leading-relaxed">到着後は、看護師による血圧・体温測定などの健康チェックを行います。その日の体調に合わせて無理なく過ごせるよう配慮します。</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Step 3 -->
                     <div class="flex flex-row items-center w-full relative group">
-                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-300 ease-out group-hover:scale-125 group-hover:shadow-2xl group-hover:z-20 group-hover:border-clover-light">
+                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-500 ease-in-out md:group-hover:w-80 md:group-hover:h-80 md:group-hover:ml-8 md:group-hover:shadow-2xl md:group-hover:z-30 group-hover:border-clover-primary">
                             <img src="assets/exercise.webp" alt="入浴／運動" class="w-full h-full object-cover">
                         </div>
                         <div class="w-full md:w-1/2 pl-20 md:pr-20 md:pl-0 md:text-right">
                             <div class="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                                 <div class="inline-block bg-clover-primary text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-sm">9:30</div>
                                 <h3 class="font-bold text-xl text-gray-900 mb-2">入浴／運動</h3>
-                                <p class="text-base text-subtext leading-relaxed">入浴、機能訓練など</p>
+                                <p class="text-base text-subtext leading-relaxed">銭湯方式の広々としたお風呂でリフレッシュしたり、専門スタッフのサポートのもと機能訓練を行ったりと、思い思いの時間をお過ごしください。</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Step 4 -->
                     <div class="flex flex-row items-center w-full relative group">
-                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-300 ease-out group-hover:scale-125 group-hover:shadow-2xl group-hover:z-20 group-hover:border-clover-light">
+                        <div class="absolute left-0 md:left-1/2 -ml-8 md:-ml-16 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white shadow-lg overflow-hidden z-10 bg-gray-100 flex items-center justify-center transition-all duration-500 ease-in-out md:group-hover:w-80 md:group-hover:h-80 md:group-hover:-ml-[22rem] md:group-hover:shadow-2xl md:group-hover:z-30 group-hover:border-clover-primary">
                             <img src="assets/dropoff.webp" alt="お送り" class="w-full h-full object-cover">
                         </div>
                         <div class="w-full md:w-1/2 pl-20 md:pl-20 md:ml-auto">
                             <div class="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                                 <div class="inline-block bg-clover-primary text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-sm">12:00</div>
                                 <h3 class="font-bold text-xl text-gray-900 mb-2">お送り</h3>
-                                <p class="text-base text-subtext leading-relaxed">ご自宅までお送り</p>
+                                <p class="text-base text-subtext leading-relaxed">半日の活動を終えた後は、ご自宅まで安全にお送りいたします。ご家族様への当日のご報告もしっかりと行います。</p>
                             </div>
                         </div>
                     </div>
@@ -377,7 +370,7 @@
                             <p>無理のない運動と入浴・美容の支援を通じて、日々の小さな変化にも穏やかに寄り添います。皆様とお会いできることを心より楽しみにしています。</p>
                         </div>
                         <div class="mt-8 pt-6 border-t border-gray-200">
-                            <p class="text-lg font-bold text-right text-gray-600">施設長：<span class="text-xl text-gray-900 ml-2">佐藤 健一</span></p>
+                            <p class="text-lg font-bold text-right text-gray-600">施設長：<span class="text-xl text-gray-900 ml-2">西川 賢治</span></p>
                         </div>
                     </div>
                 </div>
@@ -410,9 +403,8 @@
         <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
                 <div class="flex flex-col items-center md:items-start text-center md:text-left">
-                    <div class="flex items-center gap-2 mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-clover-primary"><path d="M16.5 3C14.76 3 13.09 3.81 12 5.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5C2 11.58 4.42 14 7.5 14C8.63 14 9.68 13.62 10.53 12.97L11 18L10 21H14L13 18L13.47 12.97C14.32 13.62 15.37 14 16.5 14C19.58 14 22 11.58 22 8.5C22 5.42 19.58 3 16.5 3ZM7.5 12C5.57 12 4 10.43 4 8.5C4 6.57 5.57 5 7.5 5C8.69 5 9.74 5.59 10.41 6.5C10.15 7.12 10 7.79 10 8.5C10 9.21 10.15 9.88 10.41 10.5C9.74 11.41 8.69 12 7.5 12ZM16.5 12C15.31 12 14.26 11.41 13.59 10.5C13.85 9.88 14 9.21 14 8.5C14 7.79 13.85 7.12 13.59 6.5C14.26 5.59 15.31 5 16.5 5C18.43 5 20 6.57 20 8.5C20 10.43 18.43 12 16.5 12Z" /></svg>
-                        <span class="text-lg font-bold text-gray-800">アイネットデイサービス今川</span>
+                    <div class="mb-4">
+                        <img src="assets/logo.png" alt="アイネットデイサービスセンター" class="h-10 w-auto object-contain">
                     </div>
                     <p class="text-sm text-subtext">通所介護・通所型独自サービス<br/>〒546-0042 大阪市東住吉区西今川１丁目14-23<br/>TEL: 00-0000-0000</p>
                 </div>
@@ -434,7 +426,6 @@
             if (menuBtn && menu) {
                 menuBtn.addEventListener('click', () => {
                     menu.classList.toggle('hidden');
-                    menu.classList.toggle('open');
                 });
             }
         });

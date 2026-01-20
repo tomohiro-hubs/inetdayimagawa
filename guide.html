@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ご利用案内 | アイネットデイサービス今川</title>
+    <title>ご利用案内 | アイネットデイサービスセンター</title>
     
     <!-- Tailwind CSS (Fixed Version) -->
     <script src="https://cdn.tailwindcss.com/3.4.1?plugins=typography"></script>
@@ -47,11 +47,7 @@
     <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
         <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-2 group">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 text-clover-primary group-hover:scale-110 transition-transform"><path d="M16.5 3C14.76 3 13.09 3.81 12 5.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5C2 11.58 4.42 14 7.5 14C8.63 14 9.68 13.62 10.53 12.97L11 18L10 21H14L13 18L13.47 12.97C14.32 13.62 15.37 14 16.5 14C19.58 14 22 11.58 22 8.5C22 5.42 19.58 3 16.5 3ZM7.5 12C5.57 12 4 10.43 4 8.5C4 6.57 5.57 5 7.5 5C8.69 5 9.74 5.59 10.41 6.5C10.15 7.12 10 7.79 10 8.5C10 9.21 10.15 9.88 10.41 10.5C9.74 11.41 8.69 12 7.5 12ZM16.5 12C15.31 12 14.26 11.41 13.59 10.5C13.85 9.88 14 9.21 14 8.5C14 7.79 13.85 7.12 13.59 6.5C14.26 5.59 15.31 5 16.5 5C18.43 5 20 6.57 20 8.5C20 10.43 18.43 12 16.5 12Z" /></svg>
-                <div class="flex flex-col">
-                    <span class="text-lg md:text-xl font-bold text-clover-dark tracking-tight leading-none">アイネットデイサービスセンター</span>
-                    <span class="text-xs text-subtext font-medium leading-none">地域密着型通所介護</span>
-                </div>
+                <img src="assets/logo.png" alt="アイネットデイサービスセンター" class="h-10 md:h-12 w-auto object-contain">
             </a>
 
             <nav class="hidden md:flex items-center gap-8">
@@ -98,92 +94,182 @@
             <div class="relative z-10 max-w-4xl mx-auto px-4">
                 <h1 class="text-3xl md:text-4xl font-bold text-clover-dark mb-4">ご利用案内</h1>
                 <p class="text-lg text-subtext leading-relaxed font-medium">ご利用対象と流れをご案内します。<br class="hidden md:block" />ご相談・見学は事前にお問い合わせください。</p>
-                <div class="flex flex-wrap justify-center gap-2 mt-6">
-                    <span class="badge px-3 py-1 bg-white border border-clover-primary/20 text-clover-dark text-xs font-bold rounded-full">半日（3時間）</span>
-                    <span class="badge px-3 py-1 bg-white border border-clover-primary/20 text-clover-dark text-xs font-bold rounded-full">送迎あり</span>
-                    <span class="badge px-3 py-1 bg-white border border-clover-primary/20 text-clover-dark text-xs font-bold rounded-full">入浴（銭湯方式）</span>
-                    <span class="badge px-3 py-1 bg-white border border-clover-primary/20 text-clover-dark text-xs font-bold rounded-full">運動（器具）</span>
-                    <span class="badge px-3 py-1 bg-white border border-clover-primary/20 text-clover-dark text-xs font-bold rounded-full">提携美容院</span>
-                </div>
+                <!-- Badges removed -->
             </div>
         </div>
 
         <div class="max-w-4xl mx-auto px-4 py-12 space-y-16">
             <!-- Eligibility -->
-            <section>
-                <div class="bg-white rounded-2xl p-6 md:p-8 border border-border shadow-sm flex flex-col md:flex-row gap-6 items-start">
-                    <div class="p-3 bg-clover-light text-clover-primary rounded-xl flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <section class="mb-24">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">ご利用対象</h2>
+                    <p class="text-subtext">以下の方を対象としています。詳しくはお気軽にご相談ください。</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl border border-clover-light shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
+                        <div class="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center text-orange-500 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">要支援 1・2</h3>
+                        <p class="text-subtext text-sm">日常生活に支援が必要な方</p>
                     </div>
-                    <div>
-                        <h2 class="text-xl font-bold mb-3">ご利用対象</h2>
-                        <div class="text-lg font-bold text-clover-dark mb-4">要支援 1・2 <span class="text-gray-300 mx-2">|</span> 要介護 1〜5</div>
-                        <p class="text-sm text-subtext bg-gray-50 p-4 rounded-lg">ご状態やご希望によりご案内が異なる場合があります。まずはご相談ください。</p>
+                    <div class="bg-white p-8 rounded-2xl border border-clover-light shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300">
+                        <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">要介護 1〜5</h3>
+                        <p class="text-subtext text-sm">介護サービスが必要な方</p>
                     </div>
+                </div>
+                <div class="mt-8 p-4 bg-gray-50 rounded-xl text-center border border-gray-100">
+                    <p class="text-sm text-subtext font-medium">※ ご状態やご希望により、最適なサービス内容をご提案させていただきます。</p>
                 </div>
             </section>
 
             <!-- Steps -->
-            <section>
-                <h2 class="text-2xl font-bold text-center mb-8">ご利用までの流れ</h2>
-                <div class="grid md:grid-cols-3 gap-6 relative">
-                    <div class="hidden md:block absolute top-6 left-[16%] right-[16%] h-0.5 bg-gray-100 -z-10"></div>
-                    
-                    <div class="bg-white p-6 rounded-xl border border-border shadow-sm flex md:flex-col items-center gap-4 text-left md:text-center">
-                        <div class="w-12 h-12 rounded-full bg-clover-primary text-white font-bold text-lg flex items-center justify-center flex-shrink-0 border-4 border-white shadow-sm">1</div>
-                        <div><h3 class="font-bold text-lg text-gray-900 mb-1">ご相談</h3><p class="text-sm text-subtext leading-relaxed">ご利用目的やお身体の状態などをお伺いします。</p></div>
+            <section class="mb-24">
+                <div class="text-center mb-16">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">ご利用までの流れ</h2>
+                    <div class="w-16 h-1 bg-clover-primary mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="space-y-16">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                        <div class="w-full md:w-1/2">
+                            <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-gray-100 relative group">
+                                <div class="absolute top-4 left-4 bg-clover-primary text-white font-bold px-4 py-1 rounded-full shadow-sm z-10">STEP 1</div>
+                                <img src="assets/consultation.webp" alt="ご相談" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">お問い合わせ・ご相談</h3>
+                            <p class="text-lg text-subtext leading-relaxed mb-4">まずはお電話またはお問い合わせフォームよりご連絡ください。現在の状況やお困りごと、ご希望をお伺いします。</p>
+                            <p class="text-sm text-subtext bg-clover-light/50 p-4 rounded-lg">担当のケアマネジャーさんがいらっしゃる場合は、ケアマネジャーさんを通じてご連絡いただいても構いません。</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-xl border border-border shadow-sm flex md:flex-col items-center gap-4 text-left md:text-center">
-                        <div class="w-12 h-12 rounded-full bg-clover-primary text-white font-bold text-lg flex items-center justify-center flex-shrink-0 border-4 border-white shadow-sm">2</div>
-                        <div><h3 class="font-bold text-lg text-gray-900 mb-1">内容確認・調整</h3><p class="text-sm text-subtext leading-relaxed">送迎・入浴・運動など、ご希望と安全面を確認します。</p></div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                        <div class="w-full md:w-1/2">
+                            <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-gray-100 relative group">
+                                <div class="absolute top-4 left-4 bg-clover-primary text-white font-bold px-4 py-1 rounded-full shadow-sm z-10">STEP 2</div>
+                                <img src="assets/tour.webp" alt="見学・契約" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">ご見学・ご契約</h3>
+                            <p class="text-lg text-subtext leading-relaxed mb-4">実際に施設をご覧いただき、雰囲気や設備をご確認ください。サービス内容にご納得いただけましたら、重要事項のご説明を行い、ご契約となります。</p>
+                            <ul class="space-y-2 text-subtext font-medium">
+                                <li class="flex items-center gap-2"><span class="text-clover-primary">●</span>体験利用も可能です</li>
+                                <li class="flex items-center gap-2"><span class="text-clover-primary">●</span>送迎の調整も行います</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-xl border border-border shadow-sm flex md:flex-col items-center gap-4 text-left md:text-center">
-                        <div class="w-12 h-12 rounded-full bg-clover-primary text-white font-bold text-lg flex items-center justify-center flex-shrink-0 border-4 border-white shadow-sm">3</div>
-                        <div><h3 class="font-bold text-lg text-gray-900 mb-1">ご利用開始</h3><p class="text-sm text-subtext leading-relaxed">必要な準備をご案内のうえ、利用を開始します。</p></div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                        <div class="w-full md:w-1/2">
+                            <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-gray-100 relative group">
+                                <div class="absolute top-4 left-4 bg-clover-primary text-white font-bold px-4 py-1 rounded-full shadow-sm z-10">STEP 3</div>
+                                <img src="assets/pickup.webp" alt="ご利用開始" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">ご利用開始</h3>
+                            <p class="text-lg text-subtext leading-relaxed mb-4">いよいよサービス利用スタートです。初回はスタッフが丁寧にご案内しますので、安心してご来所ください。</p>
+                            <p class="text-sm text-subtext bg-clover-light/50 p-4 rounded-lg">ご自宅までお迎えにあがります。持ち物などは事前にご案内いたします。</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Checklist -->
-            <section>
-                <div class="bg-[#FAFAFA] rounded-2xl p-6 md:p-10 border border-border relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1.5 bg-clover-primary"></div>
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <div class="md:w-1/3">
-                            <div class="flex items-center gap-3 mb-3">
-                                <span class="text-clover-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h.01"/><path d="M13 12h5"/><path d="M9 16h.01"/><path d="M13 16h5"/><path d="M9 8h.01"/><path d="M13 8h5"/></svg>
-                                </span>
-                                <h2 class="text-xl font-bold text-gray-900">事前に伺うこと</h2>
-                            </div>
-                            <p class="text-sm text-subtext leading-relaxed mb-4">スムーズなご案内のため、分かる範囲でお知らせください。</p>
-                            <p class="text-xs text-clover-dark bg-clover-light/50 p-3 rounded-lg">分からない項目があっても問題ありません。こちらから確認します。</p>
+            <section class="mb-24 bg-clover-light/30 rounded-3xl p-8 md:p-12 border border-clover-primary/5">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/3">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">事前に伺うこと</h2>
+                        <p class="text-subtext leading-relaxed mb-6">スムーズなご案内のため、以下の点について分かる範囲でお知らせいただけると幸いです。</p>
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <p class="text-sm text-clover-dark font-medium flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                                分からない項目があっても問題ありません。こちらから確認させていただきます。
+                            </p>
                         </div>
-                        <div class="md:w-2/3">
-                            <ul class="grid gap-3">
-                                <li class="bg-white p-3 rounded border border-gray-100 flex gap-2 font-medium shadow-sm"><span class="text-clover-primary w-5 h-5 flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>お身体の状態・介護度</li>
-                                <li class="bg-white p-3 rounded border border-gray-100 flex gap-2 font-medium shadow-sm"><span class="text-clover-primary w-5 h-5 flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>送迎場所・送迎の希望</li>
-                                <li class="bg-white p-3 rounded border border-gray-100 flex gap-2 font-medium shadow-sm"><span class="text-clover-primary w-5 h-5 flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>入浴の希望（可否・注意点）</li>
-                                <li class="bg-white p-3 rounded border border-gray-100 flex gap-2 font-medium shadow-sm"><span class="text-clover-primary w-5 h-5 flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>運動の希望（無理のない範囲）</li>
-                                <li class="bg-white p-3 rounded border border-gray-100 flex gap-2 font-medium shadow-sm"><span class="text-clover-primary w-5 h-5 flex-shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>その他ご希望（美容院提携サービス等）</li>
-                            </ul>
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="grid gap-4">
+                            <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4 border-l-4 border-clover-primary">
+                                <div class="w-8 h-8 rounded-full bg-clover-light text-clover-primary flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                </div>
+                                <span class="font-bold text-gray-800">お身体の状態・要介護度</span>
+                            </div>
+                            <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4 border-l-4 border-clover-primary">
+                                <div class="w-8 h-8 rounded-full bg-clover-light text-clover-primary flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                </div>
+                                <span class="font-bold text-gray-800">送迎場所・送迎のご希望</span>
+                            </div>
+                            <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4 border-l-4 border-clover-primary">
+                                <div class="w-8 h-8 rounded-full bg-clover-light text-clover-primary flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                </div>
+                                <span class="font-bold text-gray-800">入浴のご希望（可否・注意点）</span>
+                            </div>
+                            <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4 border-l-4 border-clover-primary">
+                                <div class="w-8 h-8 rounded-full bg-clover-light text-clover-primary flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                </div>
+                                <span class="font-bold text-gray-800">運動のご希望（無理のない範囲）</span>
+                            </div>
+                            <div class="bg-white p-5 rounded-xl shadow-sm flex items-center gap-4 border-l-4 border-clover-primary">
+                                <div class="w-8 h-8 rounded-full bg-clover-light text-clover-primary flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                                </div>
+                                <span class="font-bold text-gray-800">その他のご希望（美容院サービス等）</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Visit Info -->
-            <section>
-                <div class="bg-white rounded-xl p-6 border-l-4 border-clover-primary shadow-sm flex items-start gap-4">
-                    <span class="text-clover-primary flex-shrink-0 mt-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="m9 16 2 2 4-4"/></svg>
-                    </span>
-                    <div>
-                        <h3 class="font-bold text-lg text-gray-900 mb-2">見学について</h3>
-                        <ul class="space-y-1 text-subtext text-sm">
-                            <li>・見学をご希望の場合は、事前にお問い合わせください。</li>
-                            <li>・日程やご案内内容は、状況に応じてご相談のうえ調整します。</li>
-                        </ul>
+            <section class="mb-24">
+                <div class="bg-[#FDFDFD] rounded-3xl p-8 md:p-12 border-2 border-dashed border-clover-primary/30 relative overflow-hidden text-center group hover:border-clover-primary/50 transition-colors">
+                    <!-- Decorative Background -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-clover-light rounded-full opacity-50 blur-3xl"></div>
+                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-orange-50 rounded-full opacity-50 blur-3xl"></div>
+
+                    <div class="relative z-10 flex flex-col items-center max-w-3xl mx-auto">
+                        <div class="w-20 h-20 bg-white rounded-full shadow-md flex items-center justify-center text-clover-primary mb-6 border border-clover-light relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="m9 16 2 2 4-4"/></svg>
+                            <div class="absolute -top-1 -right-1 bg-orange-400 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm">Welcome</div>
+                        </div>
+                        
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">施設見学について</h2>
+                        
+                        <p class="text-subtext mb-8 leading-relaxed">
+                            施設の雰囲気やスタッフの対応、設備の使いやすさなどを実際にご覧いただけます。<br class="hidden md:block">
+                            ご本人様はもちろん、ご家族様だけでの見学も大歓迎です。
+                        </p>
+
+                        <div class="bg-white/80 backdrop-blur-sm px-6 py-5 rounded-2xl shadow-sm border border-gray-100 text-left w-full md:w-auto inline-block">
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3">
+                                    <div class="w-6 h-6 rounded-full bg-clover-light text-clover-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    </div>
+                                    <span class="text-gray-700 font-bold">見学をご希望の場合は、事前にお問い合わせください</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="w-6 h-6 rounded-full bg-clover-light text-clover-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    </div>
+                                    <span class="text-gray-700 font-bold">日程やご案内内容は、状況に応じてご相談のうえ調整します</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -284,9 +370,8 @@
         <div class="max-w-7xl mx-auto px-4 py-8 md:py-12">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
                 <div class="flex flex-col items-center md:items-start text-center md:text-left">
-                    <div class="flex items-center gap-2 mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-clover-primary"><path d="M16.5 3C14.76 3 13.09 3.81 12 5.09C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.42 2 8.5C2 11.58 4.42 14 7.5 14C8.63 14 9.68 13.62 10.53 12.97L11 18L10 21H14L13 18L13.47 12.97C14.32 13.62 15.37 14 16.5 14C19.58 14 22 11.58 22 8.5C22 5.42 19.58 3 16.5 3ZM7.5 12C5.57 12 4 10.43 4 8.5C4 6.57 5.57 5 7.5 5C8.69 5 9.74 5.59 10.41 6.5C10.15 7.12 10 7.79 10 8.5C10 9.21 10.15 9.88 10.41 10.5C9.74 11.41 8.69 12 7.5 12ZM16.5 12C15.31 12 14.26 11.41 13.59 10.5C13.85 9.88 14 9.21 14 8.5C14 7.79 13.85 7.12 13.59 6.5C14.26 5.59 15.31 5 16.5 5C18.43 5 20 6.57 20 8.5C20 10.43 18.43 12 16.5 12Z" /></svg>
-                        <span class="text-lg font-bold text-gray-800">アイネットデイサービス今川</span>
+                    <div class="mb-4">
+                        <img src="assets/logo.png" alt="アイネットデイサービスセンター" class="h-10 w-auto object-contain">
                     </div>
                     <p class="text-sm text-subtext">通所介護・通所型独自サービス<br/>〒546-0042 大阪市東住吉区西今川１丁目14-23<br/>TEL: 00-0000-0000</p>
                 </div>
