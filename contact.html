@@ -57,8 +57,19 @@
                     fontFamily: { sans: ['"Noto Sans JP"', 'sans-serif'] },
                     maxWidth: { 'container': '72rem' },
                     borderRadius: { 'card': '1rem', 'btn': '0.75rem' },
-                    keyframes: { "slide-in": { "0%": { transform: "translateY(-10px)", opacity: 0 }, "100%": { transform: "translateY(0)", opacity: 1 } }, "fade-in": { "0%": { opacity: 0 }, "100%": { opacity: 1 } } },
-                    animation: { "slide-in": "slide-in 0.3s ease-out", "fade-in": "fade-in 0.5s ease-out" }
+                    keyframes: {
+                        "slide-in": { "0%": { transform: "translateY(-10px)", opacity: 0 }, "100%": { transform: "translateY(0)", opacity: 1 } },
+                        "fade-in": { "0%": { opacity: 0 }, "100%": { opacity: 1 } },
+                        "loop-scroll": {
+                            "0%": { transform: "translateX(0)" },
+                            "100%": { transform: "translateX(-50%)" },
+                        }
+                    },
+                    animation: {
+                        "slide-in": "slide-in 0.3s ease-out",
+                        "fade-in": "fade-in 0.5s ease-out",
+                        "loop-scroll": "loop-scroll 30s linear infinite",
+                    }
                 }
             }
         }
@@ -152,6 +163,53 @@
 
 
         </div>
+
+        <!-- Infinite Photo Slider -->
+        <section class="py-10 bg-white border-t border-border overflow-hidden">
+            <div class="mb-4 text-center md:hidden">
+                <p class="text-xs text-subtext">左右にスライドしてご覧ください</p>
+            </div>
+            <div class="flex w-max animate-loop-scroll hover:[animation-play-state:paused]">
+                <!-- Slide Set 1 -->
+                <div class="flex shrink-0 justify-start gap-8 px-4">
+                    <img src="assets/slide1.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide2.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide3.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide4.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide5.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide6.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide7.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide8.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                </div>
+                <!-- Slide Set 2 -->
+                <div class="flex shrink-0 justify-start gap-8 px-4" aria-hidden="true">
+                    <img src="assets/slide1.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide2.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide3.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide4.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide5.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide6.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide7.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                    <img src="assets/slide8.jpg"
+                        class="h-48 md:h-64 w-auto rounded-xl object-cover shadow-md flex-shrink-0" alt="施設風景">
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer (Static) -->
