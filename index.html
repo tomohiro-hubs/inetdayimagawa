@@ -98,8 +98,8 @@
             <div class="absolute inset-0 z-0 overflow-hidden" id="hero-slideshow">
                 <!-- Slide 1 -->
                 <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
-                    <img src="assets/hero.jpg" class="w-full h-full object-cover object-[center_50%]"
-                        alt="明るいデイサービスの室内">
+                    <img src="assets/hero.jpg" class="w-full h-full object-cover md:object-center"
+                        style="object-position: calc(50% - 80px) 50%;" alt="明るいデイサービスの室内">
                 </div>
                 <!-- Slide 2 -->
                 <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
@@ -111,7 +111,7 @@
                 </div>
                 <!-- Overlay -->
                 <div
-                    class="absolute inset-0 bg-white/50 md:bg-gradient-to-r md:from-white/80 md:via-white/50 md:to-transparent z-10">
+                    class="absolute inset-0 bg-white/70 md:bg-gradient-to-r md:from-white/80 md:via-white/50 md:to-transparent z-10">
                 </div>
             </div>
 
@@ -304,10 +304,8 @@
         </section>
 
         <!-- Infinite Photo Slider -->
-        <section class="py-10 bg-white border-b border-border overflow-hidden">
-            <div class="mb-4 text-center md:hidden">
-                <p class="text-xs text-subtext">左右にスライドしてご覧ください</p>
-            </div>
+        <section class="py-16 md:py-24 bg-white overflow-hidden">
+
             <div class="flex w-max animate-loop-scroll hover:[animation-play-state:paused]">
                 <!-- Slide Set 1 -->
                 <div class="flex shrink-0 justify-start gap-8 px-4">
@@ -694,9 +692,10 @@
         <!-- ContactCtaBand -->
         <section class="bg-[#EAF6EA] py-16 md:py-24 text-center border-t border-clover-primary/10">
             <div class="max-w-4xl mx-auto px-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-clover-dark mb-4 leading-tight">ご不明な点はお気軽にお問い合わせください</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-clover-dark mb-4 leading-tight">ご不明な点はお気軽に<br
+                        class="md:hidden" />お問い合わせください</h2>
                 <p class="text-gray-600 mb-10 text-base md:text-lg leading-relaxed">状況に応じて、必要な情報や手順をご案内します<br
-                        class="hidden md:block" />まずはお気軽にお電話またはフォームよりご連絡ください。</p>
+                        class="hidden md:block" />まずはお気軽にお電話ください。</p>
                 <div class="flex flex-col md:flex-row gap-4 justify-center items-stretch">
                     <a href="tel:00-0000-0000"
                         class="bg-white px-8 py-4 rounded-xl shadow-sm flex items-center justify-center gap-4 border-2 border-transparent hover:border-clover-primary/30 transition-all group">
